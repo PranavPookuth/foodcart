@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Payment</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+	<!-- animate css -->
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}">
+	<!-- main style -->
+	<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+	<!-- responsive -->
+	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+</head>
+<body>
+
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="{% url 'homepage' %}">
+								<img src="{% static 'assets\img\png-transparent-pizza-delivery-fast-food-restaurant-pizza-delivery-pizza-food-logo-car-fotor-bg-remover-20230616164041.png' %}" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="{% url 'homepage'%}">Home</a>
+<!--									<ul class="sub-menu">-->
+<!--										<li><a href="index.html">Static Home</a></li>-->
+<!--										<li><a href="index_2.html">Slider Home</a></li>-->
+<!--									</ul>-->
+								</li>
+								<li><a href="{% url 'aboutpage'%}">About</a></li>
+<!--								<li><a href="#">Pages</a>-->
+<!--									<ul class="sub-menu">-->
+<!--										<li><a href="404.html">404 page</a></li>-->
+<!--										<li><a href="about.html">About</a></li>-->
+<!--										<li><a href="cart.html">Cart</a></li>-->
+<!--										<li><a href="checkout.html">Check Out</a></li>-->
+<!--										<li><a href="contact.html">Contact</a></li>-->
+<!--										<li><a href="news.html">News</a></li>-->
+<!--										<li><a href="shop.html">Shop</a></li>-->
+<!--									</ul>-->
+								</li>
+<!--								<li><a href="news.html">News</a>-->
+<!--									<ul class="sub-menu">-->
+<!--										<li><a href="news.html">News</a></li>-->
+<!--										<li><a href="single-news.html">Single News</a></li>-->
+<!--									</ul>-->
+<!--								</li>-->
+								<li><a href="{% url 'contactpage'%}">Contact</a></li>
+<!--								<li><a href="">Shop</a>-->
+<!--									<ul class="sub-menu">-->
+<!--										<li><a href="shop.html">Shop</a></li>-->
+<!--										<li><a href="checkout.html">Check Out</a></li>-->
+<!--										<li><a href="single-product.html">Single Product</a></li>-->
+<!--										<li><a href="cart.html">Cart</a></li>-->
+<!--									</ul>-->
+<!--								</li>-->
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="{% url 'cartpage' %}"><i class="fas fa-shopping-cart"></i></a>
+
+									</div>
+
+								</li>
+
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>See more Details</p>
+						<h1>Payment</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+	<!-- single product -->
+	<div class="card" style="text-align:center;width:1250px;margin-left:100px;margin-top:20px">
+            <div class="card-top border-bottom text-center">
+                 <a href="#"> Back to shop</a>
+            </div>
+            <div class="card-body" style="padding:30px">
+                <div class="row upper">
+                    <span><i class="fa fa-check-circle-o"></i> Order details</span>
+                    <span id="payment"><span id="three">3</span>Payment</span>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="left border">
+                            <div class="row" style="padding:30px">
+                                <span class="header">Payment</span>
+                                <div class="icons">
+                                    <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png"/>
+                                    <img src="https://img.icons8.com/color/48/000000/maestro.png"/>
+                                </div>
+                            </div>
+                            <form>
+                                <span>Cardholder's name:</span>
+                                <input type="text"class="form-control"  placeholder="name">
+                                <span>Card Number:</span>
+                                <input type="text"class="form-control"  placeholder="0125 6780 4567 9909">
+                                <div class="row">
+                                    <div class="col-4"><span>Expiry date:</span>
+                                        <input type="date" class="form-control" placeholder="YY/MM">
+                                    </div>
+                                    <div class="col-4"><span>CVV:</span>
+                                        <input type="text" class="form-control" id="cvv">
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="save_card" class="align-left">
+                                <label for="save_card">Save card details to wallet</label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="right border" style="padding:20px">
+                            <div class="header">Order Summary</div>
+                            <p></p>
+                            <div class="card-body">
+								{% for i in cart %}
+<!--                                <div class="col-4 align-self-center"><img class="img-fluid" src="{{i.image.url}}></div>-->
+                                <div class="d-flex justify-content-between">
+									 <div class="row">Qty:{{i.quantity}}</div>
+									<div class="row text-muted">{{i.productname}}</div>
+
+                                    <div class="row"><b>${{i.price}}</b></div>
+
+
+                                </div>
+								{% endfor %}
+                            </div>
+                            <hr>
+                            <div class="row lower">
+                                <div class="col text-left">Subtotal</div>
+                                <div class="col text-right">${{grandtotal}}</div>
+                            </div>
+                            <div class="row lower">
+                                <div class="col text-left">Delivery</div>
+                                <div class="col text-right">$20</div>
+                            </div>
+                            <div class="row lower">
+                                <div class="col text-left"><b>Total to pay</b></div>
+                                <div class="col text-right"><b>${{grandtotal|add:20}}</b></div>
+                            </div>
+							<a href="{% url 'homepage' %}"><input type="submit" value="Place Order" class="boxed" onclick="alert('ordered suceessfully')"></a>
+                            <p class="text-muted text-center">Complimentary Shipping & Returns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <div>
+        </div>
+        </div>
+	<!-- end copyright -->
+
+	<!-- jquery -->
+	<script src="{% static 'assets/js/jquery-1.11.3.min.js' %}"></script>
+	<!-- bootstrap -->
+	<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- count down -->
+	<script src="{% static 'assets/js/jquery.countdown.js' %}"></script>
+	<!-- isotope -->
+	<script src="{% static 'assets/js/jquery.isotope-3.0.6.min.js' %}"></script>
+	<!-- waypoints -->
+	<script src="{% static 'assets/js/waypoints.js' %}"></script>
+	<!-- owl carousel -->
+	<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+	<!-- magnific popup -->
+	<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- mean menu -->
+	<script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
+	<!-- sticker js -->
+	<script src="{% static 'assets/js/sticker.js' %}"></script>
+	<!-- main js -->
+	<script src="{% static 'assets/js/main.js' %}"></script>
+	<style>
+
+}
+.card{
+    margin: auto;
+    width: 600px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+
+@media(max-width:767px){
+    .card{
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+@media(height:1366px){
+    .card{
+        width: 90%;
+        padding: 8vh;
+    }
+}
+.card-title{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: unset;
+    margin-bottom: 6vh;
+}
+.nav li{
+    padding: 1rem;
+}
+.nav li a{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    min-width: unset;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+form a{
+    color:grey;
+    text-decoration: none;
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+form a:hover{
+    color:grey;
+    text-decoration: none;
+}
+form .row{
+    margin: 0;
+    overflow: hidden;
+}
+form .row-1{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    overflow: hidden;
+}
+form .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .col-2,.col-7,.col-3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vh;
+}
+form .row .col-2{
+    padding-right: 0;
+}
+
+#card-header{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+#card-inner{
+    font-size: 0.7rem;
+    color: gray;
+}
+.three .col-7{
+    padding-left: 0;
+}
+.three{
+    overflow: hidden;
+    justify-content: space-between;
+}
+.three .col-2{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    width: fit-content;
+    overflow: hidden;
+}
+.three .col-2 input{
+    font-size: 0.7rem;
+    margin-left: 1vh;
+}
+.btn{
+    width: 100%;
+    background-color: rgb(65, 202, 127);
+    border-color: rgb(65, 202, 127);
+    color: white;
+    justify-content: center;
+    padding: 2vh 0;
+    margin-top: 3vh;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none;
+}
+.btn:hover{
+    color: white;
+}
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+input:focus:-moz-placeholder {
+    color:transparent;
+}
+input:focus::-moz-placeholder {
+    color:transparent;
+}
+input:focus:-ms-input-placeholder {
+    color:transparent;
+}
+	</style>
+</body>
+</html>
