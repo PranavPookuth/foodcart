@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+                      <h4 class="card-title">Product details</h4>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>PRODUCT_NAME</th>
+                            <th>IMAGE</th>
+                            <th>DESCRIPTION</th>
+                            <th>PRICE</th>
+                            <th>CATEGORY</th>
+                            <th>OPTIONS</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in data %}
+                          <tr>
+                            <td>{{i.Product_name}}</td>
+                            <td><img src="{{i.Image.url}}"></td>
+                            <td>{{i.Description}}</td>
+                            <td>{{i.Price}}</td>
+                            <td>{{i.Category}}</td>
+                            <td>
+                              <a href="{% url 'editpro' dataid=i.id %}">
+                                <button type="submit">Edit</button>
+                              </a>
+                              <a href="{% url 'deletepro' dataid=i.id %}">
+                                <button type="submit">Delete</button>
+                              </a>
+                            </td>
+                          </tr>
+                        {% endfor %}
+<!--                          <tr>-->
+<!--                            <td>Messsy</td>-->
+<!--                            <td>Flash</td>-->
+<!--                            <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>-->
+<!--                            <td><label class="badge badge-warning">In progress</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>John</td>-->
+<!--                            <td>Premier</td>-->
+<!--                            <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>-->
+<!--                            <td><label class="badge badge-info">Fixed</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>Peter</td>-->
+<!--                            <td>After effects</td>-->
+<!--                            <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>-->
+<!--                            <td><label class="badge badge-success">Completed</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>Dave</td>-->
+<!--                            <td>53275535</td>-->
+<!--                            <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>-->
+<!--                            <td><label class="badge badge-warning">In progress</label></td>-->
+<!--                          </tr>-->
+                        </tbody>
+                      </table>
+
+
+</body>
+</html>
+{% endblock %}

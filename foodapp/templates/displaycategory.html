@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div class="col-lg-6 grid-margin stretch-card">-->
+<!--                <div class="card">-->
+<!--                  <div class="card-body">-->
+                    <h4 class="card-title">Category details</h4>
+<!--                    <p class="card-description"> Add class <code>.table-hover</code>-->
+<!--                    </p>-->
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                          <form>
+                              <thead>
+                          <tr>
+                            <th>CATEGORY NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>IMAGE</th>
+                            <th>OPTIONS</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in data %}
+                          <tr>
+                            <td>{{i.Category_name}}</td>
+                            <td>{{i.Description}}</td>
+                            <td><img src="{{i.Image.url}}"></td>
+                            <td>
+                              <a class="btn btn-outline-light" href="{% url 'editdata' dataid=i.id %}">
+                                Edit
+                              </a>
+                              <a  class="btn btn-outline-light" href="{% url 'deletedata' dataid=i.id %}">
+                                Delete
+                              </a>
+                            </td>
+                          </tr>
+                        {% endfor %}
+                          </tbody>
+                        </form>
+<!--                          <tr>-->
+<!--                            <td>Messsy</td>-->
+<!--                            <td>Flash</td>-->
+<!--                            <td class="text-danger"> 21.06% <i class="mdi mdi-arrow-down"></i></td>-->
+<!--                            <td><label class="badge badge-warning">In progress</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>John</td>-->
+<!--                            <td>Premier</td>-->
+<!--                            <td class="text-danger"> 35.00% <i class="mdi mdi-arrow-down"></i></td>-->
+<!--                            <td><label class="badge badge-info">Fixed</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>Peter</td>-->
+<!--                            <td>After effects</td>-->
+<!--                            <td class="text-success"> 82.00% <i class="mdi mdi-arrow-up"></i></td>-->
+<!--                            <td><label class="badge badge-success">Completed</label></td>-->
+<!--                          </tr>-->
+<!--                          <tr>-->
+<!--                            <td>Dave</td>-->
+<!--                            <td>53275535</td>-->
+<!--                            <td class="text-success"> 98.05% <i class="mdi mdi-arrow-up"></i></td>-->
+<!--                            <td><label class="badge badge-warning">In progress</label></td>-->
+<!--                          </tr>-->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   <!-- <script>
+      function myfn(){
+         var x=confirm("are you sure..?");
+         if(x==true){
+            alert("deleted");
+         }
+         else{
+            alert("cancel");
+         }
+      }
+   </script>
+</script> -->
+
+</body>
+</html>
+{% endblock %}
